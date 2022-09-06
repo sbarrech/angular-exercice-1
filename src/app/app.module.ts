@@ -3,11 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
+import { MessagesComponent } from './components/messages/messages.component';
+import { MessagesService } from './services/messages.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent ],
-  bootstrap:    [ AppComponent ]
+  imports: [BrowserModule, FormsModule, HttpClientModule],
+  declarations: [AppComponent, MessagesComponent],
+  bootstrap: [AppComponent],
+  providers: [MessagesService],
 })
-export class AppModule { }
+export class AppModule {}

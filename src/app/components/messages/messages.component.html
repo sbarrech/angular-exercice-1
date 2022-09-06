@@ -1,0 +1,7 @@
+<h1>Messages</h1>
+<div *ngFor="let item of items" class="entry">
+  <img src="{{ item.sender.profileImage }}" class="avatar" />
+  <p>{{ item.sender.name }}</p>
+  <div class="spacer"></div>
+  <p>></p>
+</div>
