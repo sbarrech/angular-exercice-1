@@ -1,0 +1,23 @@
+<div class="content">
+  <div class="entry">
+    <img src="{{ sender.profileImage }}" class="avatar" />
+    <p>{{ sender.name }}</p>
+    <div class="spacer"></div>
+    <button class="submit-message" [routerLink]="['/messages']" type="button">
+      <
+    </button>
+  </div>
+
+  <div class="messages">
+    <p *ngFor="let message of messages" class="message">
+      {{ message.content }}
+    </p>
+  </div>
+
+  <div class="controls">
+    <input type="text" class="text-message" [formControl]="messageContent" />
+    <button class="submit-message" (click)="sendMessage()" type="button">
+      >
+    </button>
+  </div>
+</div>

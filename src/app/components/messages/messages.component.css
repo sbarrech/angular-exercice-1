@@ -4,11 +4,21 @@
   width: 42px;
 }
 
+h1 {
+  padding: 8px;
+}
+
 .entry {
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
+  padding: 8px;
+  transition: 0.3s;
+}
+
+.entry:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .spacer {

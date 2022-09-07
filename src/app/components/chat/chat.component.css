@@ -1,0 +1,55 @@
+.avatar {
+  border-radius: 50%;
+  height: 42px;
+  width: 42px;
+}
+
+.entry {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  padding: 8px;
+}
+
+.message {
+  padding: 16px;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  padding: 8px;
+}
+
+.text-message {
+  height: 24px;
+  width: 100%;
+  border-radius: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.submit-message {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  border-style: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.messages {
+  overflow-y: auto;
+  height: 100%;
+}
